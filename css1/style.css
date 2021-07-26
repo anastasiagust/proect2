@@ -1,0 +1,619 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    line-height: 25px;
+    color:#999;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ 
+.img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1142px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.button {
+    background: #4985FF;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    color:#fff;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 13px 36px 15px;
+}
+
+.main-header {
+    height: 100vh;    
+    background: url(../img/groop-people.jpg) center / cover no-repeat;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.main-nav {
+    border-bottom: 1px solid #A1A1A1;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 0;
+}
+
+.main-menu a {
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 14px;
+    border-bottom: 2px solid transparent;
+    padding: 20px 10px;
+}
+
+.main-menu a.active,
+.main-menu a:hover {
+    border-color: #fff;
+}
+
+
+.main-heading {
+    max-width: 872px;
+    padding: 0px 16px;
+    margin: 220px auto 0;
+    text-align: center;
+}
+
+.main-heading h1 {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0px;
+    margin: 0px;
+}
+
+.main-heading h2 {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 800;
+    margin: 20px 0 0;
+    padding: 0; 
+}
+
+
+.main-heading a {
+    margin-top: 50px;
+}
+
+@media (min-widht: 768px) {
+    .main-menu a {
+        font-size: 16px;
+        padding: 30px 16px;
+    }
+
+    .main-heading {
+        max-width: 888px;
+        padding: 0 24px;
+    }
+    
+    .main-heading h2 {
+        font-size: 48px;
+        line-height: 64px;
+    }
+}
+
+
+@media (min-wight: 992px) {
+    .main-menu a {
+        padding: 40px 20px;
+    }
+
+}
+
+
+.service-list {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+
+.service-list_heading {
+    max-width: 740px;
+    font-size: 20px;
+    line-height: 44px;
+    color: #323232;
+    margin: 0px auto;
+    font-weight: bold;
+    padding: 0px;
+}
+
+.service-list_text {
+    margin: 42px auto 0;
+    max-width: 730px;
+}
+
+.service-list_list {
+    list-style: none;
+    margin: 62px 0 0;
+    padding: 0;
+
+}
+
+.service-list_list-item {
+    display: flex;
+    align-items: center;
+
+}
+
+.service-list_icon {
+    width: 90px;
+    height: 90px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #4985FF;
+    border-radius: 50%;
+    box-shadow: 0 0 0 9px #fff, 0 0 0 10px #E0E0E0;
+    flex-shrink: 0;
+    margin: 10px 26px 10px 10px;
+
+}    
+
+
+.service-list_icon img {
+    display: block;
+}
+
+.service-list_decsription {
+    margin: 0;
+    text-align: left;
+    line-height: 22px;
+}
+
+.service-list_description h3 {
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+}
+
+
+.service-list_description p {
+    font-size: 14px;
+}
+
+.service-list_list-item + .service-list_list-item {
+    margin-top: 20px;
+}
+
+.service-list_link {
+    margin-top: 48px;
+}
+
+
+@media (min-widht: 768px) {
+    .service-list_heading {
+        font-size: 36px;
+        line-height: 52px;
+
+    }
+}
+
+@media (min-width: 992px) {
+    .service-list_list-item + .service-list_list-item {
+        margin-top: 0px;
+        margin-left: 14px;
+    }
+    
+    .service-list_list-item {
+        align-items:flex-start;
+    }
+    .service-list_list {
+        display: flex;
+    }
+    .service-list_description {
+        margin-top: 46px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .service-list_list-item + .service-list_list-item {
+        margin-left: 30px;
+    }
+}
+
+
+/*--container2 высокие стандарты-*/
+
+
+/*.container2 {
+    background: #F6F6F8;
+    padding: 100px 70px;
+    align-items: center;
+}
+
+.promo-wrapper {
+    display: flex;
+}
+
+.promoblock2 {
+    margin-top: 52px;
+}
+
+.promoblock2 h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 53px;
+    color: #323232;
+}
+
+
+.promoblock2 p {
+    margin: 40px 121px 30px 0px;
+}
+
+.fotoblock {
+    margin-top: 50px;
+    margin-bottom: 90px;
+}
+
+.promoblock2 a {
+    color: #4985FF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration-line: underline;
+}
+
+.hr {
+    margin-top: 90px;
+    align-self: center;
+
+}
+
+
+.proekt-125 {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 70px 0 0 0;
+}
+
+.proekt-125 span {
+    font-size: 36px;
+    line-height: 53px;
+    color: #000000;
+    padding-left: 20px;
+}
+
+.proekt-125 p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 25px;
+    color: #999999; 
+}
+
+
+.container3 {
+    height: 887px;
+    padding: 100px 85px;
+    border: 1px solid #000;
+    background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%) 0 0 / 100% 50% no-repeat, #fff;
+}
+
+.works {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.our-works  {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 53px;
+    color: #FFFFFF;
+}
+
+.btn-2 {
+    width: 200px;
+    height: 45px;
+    background: #4985FF;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    color:#fff;
+    display: table;
+    text-decoration: none;
+    font-family: Montserrat;
+    text-align: center;
+    padding: 13px 36px 15px;
+}
+
+.promoblock3  {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    padding-inline-start: 0;
+    border-bottom: 1px solid #E0E0E0;
+
+
+}
+.promoblock3  li {
+    padding: 70px 30px 85px 0;
+}
+
+.promoblock3  h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin: 30px 30px 30px 0;
+}
+
+.promoblock3  span {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4985FF;
+}
+
+.promoblock3  p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #999999;
+    margin-bottom: 30px;
+}
+
+
+.hr {F}
+
+.container4 {
+    background: #F6F6F8;
+}
+
+.promoblock4 {
+    padding: 100px 405px 130px;
+}
+
+.our-proekt {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 53px;
+    color: #000;
+}
+
+.promoblock4 p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #999999;
+    margin-bottom: 70px;
+}
+
+.kod {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.kod li {
+    margin-left: 30px;
+}
+
+
+.container5 {
+    height: 570px;
+    background-image: url(../img/groop-people.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #FFFFFF;
+    background-image:  rgba(255, 255, 255, 0.15);  
+
+}
+
+.video {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    padding-top: 70px;
+}
+
+
+
+
+.promoblock5 p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+.hr {
+    width: 1110px;
+    border: 1px solid #E0E0E0;
+}
+
+
+.container6 {
+    text-align: center;
+    max-width: 1110px;
+    margin: 85px auto;
+}
+ 
+.mailing {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 20px;
+    margin-top: 85px;
+}
+.blocks {
+    margin: 0px auto;
+    width: 489px;
+    display: flex;
+}
+ .mailing-text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #999999;
+    margin-bottom: 20px;
+    margin-right: 33px;
+}
+
+.mailing-email {
+    width: 300px;
+    height: 45px;
+    background: #FFFFFF;
+    font-family: Montserrat;
+    font-size: 13px;
+    line-height: 21px;
+    color: #999999;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    border-radius: 30px 0px 0px 30px;
+    border: 1px solid #F2F2F2;
+    padding-left: 33px;
+}
+
+.mailing-button {
+    width: 190px;
+    height: 45px;
+    background: #4985FF;
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFF;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    border-radius: 0px 30px 30px 0px;
+    border: 0px;
+}
+
+.container6 p {
+    margin-top: 35px;
+    font-size: 13px;
+    line-height: 21px;
+    color: #999;
+}
+
+
+.main-footer {
+    background: #F6F6F8;
+    color: #999999;
+   
+}
+
+.footer {
+    display: flex;
+    justify-content:space-between;
+    align-items: stretch;
+    padding-top: 70px;
+}
+
+
+.footer-icon {
+    text-align:start;
+    margin-bottom: 112px;
+}
+
+.footer  a {
+    text-decoration: none;
+}
+
+.icon {
+    margin-bottom: 35px;
+    color: #000000;
+}
+
+.colors {
+    color: #999999;
+
+}
+
+.footer-icon li { 
+    list-style-type: none;
+    
+}
+
+.footer-icon li + li {
+    margin-top: 30px;
+}
+
+.social {
+    margin-bottom: 35px;
+    color: #000000;
+}
+
+.footer-social li {
+    list-style-type: none;
+
+}
+
+.footer-social li+li {
+    margin-top: 30px;
+}
+
+.proekts {
+    margin-bottom: 35px;
+    color: #000000;
+}
+
+.footer-proekt li {
+    list-style-type: none;
+}
+
+.footer-proekt li+li {
+    margin-top: 30px;
+}
+
+.link {
+    margin-bottom: 35px;
+    color: #000000;
+}
+
+.footer-link li {
+    list-style-type: none;
+}
+
+.footer-link li+li {
+    margin-top: 30px;
+}
+
+.hr {
+   
+}
+
+.sub {
+    margin-top: 30px; 
+}
+
+.pravo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+} */
